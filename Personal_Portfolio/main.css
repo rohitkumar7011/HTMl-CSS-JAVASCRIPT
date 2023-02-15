@@ -26,9 +26,28 @@
     padding: 26px 0px;
     
 }
+.slide-bar nav li a{
+    text-decoration: none;
+    color: black;
+    transition: font-size 0.2s;
+}
+
+.slide-bar nav li a:hover{
+    color: white; 
+    font-size: 28px;
+
+}
+
 .main{
     background-color:purple;
     width: 100vw;
     font-family: 'Karla', sans-serif;
     
+
+}
+.main .container{
+    width: 40% ;
+    height: 500px;
+    margin: 40px 250px;
+    background-color : red;
 }
