@@ -37,11 +37,13 @@
     font-size: 28px;
 
 }
+
 .main{
     background-color:purple;
     width: 100vw;
     font-family: 'Karla', sans-serif;
     
+
 }
 .main .container{
     width: 40% ;
