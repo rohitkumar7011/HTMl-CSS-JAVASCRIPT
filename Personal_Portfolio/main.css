@@ -11,9 +11,14 @@
 .slide-bar{
 
     background-color: rgb(212, 221, 171);
+    width: 190px;
+
+
+    background-color: rgb(212, 221, 171);
 
     background-color: aqua;
     width: 15vw;
+
     height: 100vh;
     
     font-family: 'Nunito', sans-serif;
@@ -40,6 +45,7 @@
     font-size: 28px;
 
 }
+
 
 .main{
     /*background-color:rgba(46, 122, 184, 0.658);*/
@@ -88,8 +94,11 @@
 }
 
 .dev-pic img{
+
     height: 500px;}
-=======
+
+    height: 500px;}
+
 
 .main{
     background-color:purple;
@@ -104,3 +113,4 @@
     margin: 40px 250px;
     background-color : red;
 }
+
