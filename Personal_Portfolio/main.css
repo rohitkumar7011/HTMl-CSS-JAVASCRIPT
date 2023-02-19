@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&family=Nunito:ital,wght@1,300&display=swap');
+
+*{
+    margin:0 ;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+.slide-bar{
+    background-color: rgb(212, 221, 171);
+    width: 190px;
+    height: 100vh;
+    
+    font-family: 'Nunito', sans-serif;
+    
+}
+.slide-bar nav{
+    padding: 35px;
+    
+}
+.slide-bar nav li{
+    list-style: none;
+    font-size: 27px;
+    padding: 26px 0px;
+    
+}
+.slide-bar nav li a{
+    text-decoration: none;
+    color: black;
+    transition: font-size 0.2s;
+}
+
+.slide-bar nav li a:hover{
+    color: white; 
+    font-size: 28px;
+
+}
+.main{
+    /*background-color:rgba(46, 122, 184, 0.658);*/
+    width: 100vw;
+    font-family: 'Karla', sans-serif;
+    
+}
+.main .container{
+    width: 70%;
+    height: 500px;
+    margin: 29px 140px;
+    display: flex;
+    justify-content: space-around;
+    /*background-color : rgba(220, 193, 221, 0.459);*/
+}
+.dev-info{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    margin-bottom: 15%;
+}
+.hello{
+    font-size: 39px;
+    
+}
+.name{
+    font-size: 27px;
+    font-weight: bold;
+
+}
+.info{
+    font-size: 24px;
+    margin: 2px;
+}
+.buttons button{
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 2ch;
+    background-color: black;
+    margin: 6px 1px;
+    color: rgba(214, 200, 202, 0.884);
+}
+.buttons button:hover{
+    background-color: white;
+    color: black;
+}
+
+.dev-pic img{
+    height: 500px;}
