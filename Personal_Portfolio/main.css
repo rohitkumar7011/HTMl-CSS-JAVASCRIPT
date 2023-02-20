@@ -11,6 +11,9 @@
 .slide-bar{
 
     background-color: rgb(212, 221, 171);
+
+
+    background-color: rgb(212, 221, 171);
     width: 190px;
 
 
@@ -18,6 +21,7 @@
 
     background-color: aqua;
     width: 15vw;
+
 
     height: 100vh;
     
@@ -46,7 +50,6 @@
 
 }
 
-
 .main{
     /*background-color:rgba(46, 122, 184, 0.658);*/
     width: 100vw;
@@ -56,7 +59,11 @@
 .main .container{
     width: 70%;
     height: 500px;
+
+    margin: 29px 110px;
+
     margin: 29px 140px;
+
     display: flex;
     justify-content: space-around;
     /*background-color : rgba(220, 193, 221, 0.459);*/
@@ -95,6 +102,35 @@
 
 .dev-pic img{
 
+    height: 500px;
+}
+.contactform{
+    padding: 0 25px;
+    padding-top: 95px;
+    background-color: rgb(99, 170, 143);
+
+}
+.contactform h1{
+    text-align: center;
+}
+.contactform form div{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width: 26vw;
+    border-radius: 10px;
+    margin: 6px 0 0 0;
+    padding: 8px;
+    
+}
+#emailHelp{
+    font-size: 15px;
+    color: chocolate;
+    margin: 0 1px;
+}
+
     height: 500px;}
 
     height: 500px;}
@@ -113,4 +149,5 @@
     margin: 40px 250px;
     background-color : red;
 }
+
 
