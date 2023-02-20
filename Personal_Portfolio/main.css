@@ -11,6 +11,10 @@
 .slide-bar{
 
     background-color: rgb(212, 221, 171);
+    width: 190px;
+
+
+    background-color: rgb(212, 221, 171);
 
 
     background-color: rgb(212, 221, 171);
@@ -21,6 +25,7 @@
 
     background-color: aqua;
     width: 15vw;
+
 
 
     height: 100vh;
@@ -51,7 +56,12 @@
 }
 
 .main{
+    background-color:rgba(46, 122, 184, 0.658);
+
+
+.main{
     /*background-color:rgba(46, 122, 184, 0.658);*/
+
     width: 100vw;
     font-family: 'Karla', sans-serif;
     
@@ -62,7 +72,11 @@
 
     margin: 29px 110px;
 
+
+    margin: 29px 110px;
+
     margin: 29px 140px;
+
 
     display: flex;
     justify-content: space-around;
@@ -87,9 +101,16 @@
     font-size: 24px;
     margin: 2px;
 }
+
+
+.buttons button{
+    cursor: pointer;
+    padding: 8px;
+
 .buttons button{
     cursor: pointer;
     padding: 4px;
+
     border-radius: 2ch;
     background-color: black;
     margin: 6px 1px;
@@ -100,14 +121,25 @@
     color: black;
 }
 
+.btn-primary{
+    width: 66px;
+    padding: 2px;
+}
 .dev-pic img{
+
+
+.dev-pic img{
+
 
     height: 500px;
 }
 .contactform{
     padding: 0 25px;
     padding-top: 95px;
+
+
     background-color: rgb(99, 170, 143);
+
 
 }
 .contactform h1{
@@ -122,6 +154,29 @@
     width: 26vw;
     border-radius: 10px;
     margin: 6px 0 0 0;
+
+    padding: 11px;
+    background-color: whitesmoke;
+    border: 1px solid;
+}
+.form-label{
+    font-weight: bold;
+}
+#form-check{
+    flex-direction: row;
+
+}
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+
+}
+#emailHelp{
+    font-size: 15px;
+    color: rgba(0, 3, 190, 0.836);
+    margin: 0 1px;
+}
+
     padding: 8px;
     
 }
@@ -149,5 +204,6 @@
     margin: 40px 250px;
     background-color : red;
 }
+
 
 
