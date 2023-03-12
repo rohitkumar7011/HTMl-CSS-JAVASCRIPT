@@ -56,7 +56,7 @@ header{
 }
 .nav2{
     width:100%;
-    height: 105px;
+    height: 120px;
     display: flex ;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +81,7 @@ header{
     cursor: pointer;
 }
 .nav2 .nav2-left i{
-    margin-left:11px;
+    margin: left 11px;
 
 }
 .nav2 .nav2-center h1{
@@ -197,7 +197,7 @@ header{
     margin: 15px 0;
 }
 .card-container{
-    width: 100%;
+    width: 109%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -253,15 +253,14 @@ header{
 
 .trends.swiper {
     width: 100%;
-    /*padding-top: ;
-    padding-bottom: 50px;*/
+    padding: 50px;
   }
 
  .trends .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 200px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
   }
 
   .trends.swiper-slide img {
@@ -269,3 +268,117 @@ header{
     width: 100%;
     height: 100%;
   }
+ footer{
+    background-color: var(--secondary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
+ }
+ footer div{
+    flex-basis: 33%;
+ }
+ footer h1{
+    letter-spacing: 0.5rem;
+ }
+ footer h1 span{
+    color: var(--primary);
+ }
+ footer p{
+    font-size: 1rem;
+ }
+ footer i{
+    margin: 0px 5px;
+ }
+
+ @media only screen and (max-width:769px){
+    .nav1{
+        position: relative;
+        z-index: 2;
+        background-color: white;
+    }
+    .right i{
+        font-size: 15px;
+        margin: 0px 5px;
+    }
+    .nav2{
+        width: 100%;
+        height: 80px;
+    }
+    .nav2 .nav2-left i{
+        margin-left: 0px;
+    }
+    .nav2 .nav2-center h1{
+        
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        
+    }
+    .nav2 .nav2-center p{
+        color: grey;
+        font-size: 15px;
+        margin-top: 5px;
+
+    }
+    .nav2 .nav2-right i{
+        margin: 0px 5px;
+    }
+    .nav3{
+        display: none;
+    }
+    .featured{
+        background-attachment: fixed;
+    }
+    .latest{
+        padding: 0px 50px;
+    }
+    
+    .product-intro{
+        text-align: center;
+    }
+    .product-intro h1{ 
+        color: var(--primary);
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+        font-weight: bolder;
+    
+    }
+    .product-intro h1 span{
+        color: var(--secondary);
+    }
+    .product-intro p{
+        color: grey;
+        margin: 15px 0;
+    }
+    .card-container{
+        margin: 2rem 0;
+    }
+    .card-container .card{
+        flex-basis: 10%;
+        padding: 0.8rem;
+        position: relative;
+        
+    }
+    .card img{
+        width: 100%;
+        transition:0.5s ease-in-out ;
+    }
+    .card i{
+        color: goldenrod;
+        margin: 10px 0;
+    }
+    .card button{
+        color: white;
+        background-color: var(--secondary);
+        border: none;
+        outline: none;
+        margin-top: 10px ;
+        padding: 5px 15px;
+        cursor: grab;
+    } 
+    
+
+ }
