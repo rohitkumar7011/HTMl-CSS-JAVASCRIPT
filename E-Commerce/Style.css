@@ -12,7 +12,7 @@ body{
 :root{
     --primary:indianred;
     --secondary:rgba(15, 10, 29, 0.849 );
-    --light:#2f3640;
+    --light:#9dabbe;
 }
 header{
     width: 100%;
@@ -272,6 +272,12 @@ header{
  footer i{
     margin: 0px 5px;
  }
+ #sidenav{
+    display: none;
+ }
+ #menubar{
+    display: none;
+ }
 
  @media only screen and (max-width:769px){
     .nav1{
@@ -336,9 +342,10 @@ header{
         margin: 2rem 0;
     }
     .card-container .card{
-        flex-basis: 10%;
+        flex-basis: 100%;
         padding: 0.8rem;
         position: relative;
+        text-align: center;
         
     }
     .card img{
@@ -358,6 +365,90 @@ header{
         padding: 5px 15px;
         cursor: grab;
     } 
+    footer div{
+        flex-basis: 50%;
+        margin: 10px 0;
+     }  
+     #sidenav{
+        display: block;
+     }
+     #menubar{
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0%,-50%);
+        z-index: 99;
+        background-color: var(--primary);
+        color: white;
+        font-size: 2rem;
+        padding: 20px 10px;
+        animation: animate 5s ease infinite;
+     }
+     @keyframes animate {
+        0%{
+            background-color: var(--secondary);
+        }
+        100%{
+            background-color: var(--primary);
+        }
+     }
+     #sidenav{
+        width: 250px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background-color: var(--light);
+        padding-top: 70px;
+        display: block;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+
+
+    }
+    #sidenav ul{
+        list-style: none;
+        
+    }
+    #sidenav ul li{
+        display: block;
+        width: 200px;
+        position: relative;
+        z-index: 99;
+        margin: 10px 20px;
+    }
+    #sidenav ul li a{
+        text-decoration: none;
+        color:black;
+        font-weight: 400;
+        display: block;
+        font-size: 20px;
+        padding: 10px 20px;
+
+        
+    }
+    #sidenav ul li a:hover{
+        color: var(--primary);
+    }
+    #sidenav ul li i{
+        color: white;
+        margin: 0px 5px;
+    }
+    #sidenav ul ul{
+        position: absolute;
+        top: 70px; 
+        left: 0;
+        display: none;
     
+    }
+    #sidenav ul ul li{
+        background-color:white ;
+        border-bottom: 1px solid var(--primary);
+    }
+    #sidenav ul li:hover>ul{
+        display: block;
+    }
 
  }
