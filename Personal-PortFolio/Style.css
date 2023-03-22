@@ -1,0 +1,95 @@
+:root{
+    --text-color:#fff;
+    --btn-textcolor:rgb(236, 235, 235);
+    --btn-background-color:rgba(63, 61, 61);
+
+}
+.h-100{
+    height: 100%;
+}
+#container{
+    height: 100vh;
+    background-image: url(Images/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 85px 0px;
+    
+}
+.wrapper{
+    background-color: rgb(39, 37, 37);
+    margin: 0 auto;
+    width: 950px;
+    height: calc(100vh - 160px);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: -12px 10px 19px 1px rgb(0 0 0 / 44%);
+}
+.wrapper > .row {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.intro{
+    text-align: center;
+    background-color:rgb(48, 42, 42);
+    height: 100%;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.intro a{
+    color: var(--text-color);
+}
+.intro ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.content {
+    position: relative;
+}
+#home{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home h1{
+    font-size: 3.5em;
+    color: var(--text-color);
+}
+
+#home p{
+    font-size: 1.5em;
+    color: #ffffffc7;
+}
+#about{
+    padding: 50px;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    color: var(--text-color);
+    background-color: rgb(39,38,38);
+}
+#about h2{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 5px solid rgb(168, 5, 68);
+}
+#about p{
+    text-align: justify;
+}
+
+#about ul li{
+    letter-spacing: 1px;
+}
+#about ul li span{
+    color: rgb(255,179,0);
+    font-weight: bold;
+}
