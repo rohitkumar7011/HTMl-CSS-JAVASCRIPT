@@ -11,9 +11,41 @@
     height: 100%;
     background-image: url(Images/img3.jpg);
     background-repeat: no-repeat;
-    
-    padding: 60px 0px;
-    
+    padding: 60px 0px;  
+}
+
+#main-nav{
+    width: 950px;
+    margin: 0 auto 20px;
+    background-color: rgb(39,38,38);
+
+}
+#main-nav ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+#main-nav ul li{
+    width: 100%;
+    text-align: center;
+}
+#main-nav ul li i{
+    margin: 0px 5px;
+}
+
+#main-nav ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(255,179,0);
+
+}
+#main-nav ul li a:hover{
+    background-color: #000;
+    color: #fff;
 }
 .wrapper{
     background-color: rgb(39, 37, 37);
@@ -53,6 +85,8 @@
 }
 .content {
     position: relative;
+    overflow-x: hidden;
+    perspective: 400px;
 }
 .content > section{
     overflow-y: scroll;
@@ -62,6 +96,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 1s;
 }
 #home h1{
     font-size: 3.5em;
@@ -81,8 +116,11 @@
     width: 100%;
     color: var(--text-color);
     background-color: rgb(39,38,38);
+    transition-duration: 1s;
+    transform: translateX(-100%) rotateY(180deg);
+
 }
-#about,#skills, #projects, #contact h2{
+#about h2,#skills h2, #projects h2, #contact h2{
     letter-spacing: 2px;
     padding-bottom: 20px;
     margin-bottom: 30px;
@@ -242,4 +280,12 @@
 }
 #projects .card:hover img{
     transform: scale(1.5,1.5);
+}
+
+#home.show,
+#about.show,
+#skills.show,
+#projects.show,
+#contact.show {
+    transform: translateX(0%) rotateY(0deg);
 }
