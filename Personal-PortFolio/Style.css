@@ -72,7 +72,7 @@
     font-size: 1.5em;
     color: #ffffffc7;
 }
-#about, #skills, #projects{
+#about, #skills, #projects, #contact{
     padding: 40px;
     position: absolute;
     top: 0px;
@@ -82,7 +82,7 @@
     color: var(--text-color);
     background-color: rgb(39,38,38);
 }
-#about,#skills, #projects h2{
+#about,#skills, #projects, #contact h2{
     letter-spacing: 2px;
     padding-bottom: 20px;
     margin-bottom: 30px;
@@ -228,4 +228,18 @@
     to {
         width: 100%;
     }
+}
+
+/*Porjects*/
+#projects .card{
+    color: #000;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#projects .card img{
+    transition-duration: 1s;
+}
+#projects .card:hover img{
+    transform: scale(1.5,1.5);
 }
