@@ -72,16 +72,17 @@
     font-size: 1.5em;
     color: #ffffffc7;
 }
-#about, #skills{
+#about, #skills, #projects{
     padding: 40px;
     position: absolute;
     top: 0px;
+    z-index: 10;
     height: 100%;
     width: 100%;
     color: var(--text-color);
     background-color: rgb(39,38,38);
 }
-#about,#skills h2{
+#about,#skills, #projects h2{
     letter-spacing: 2px;
     padding-bottom: 20px;
     margin-bottom: 30px;
@@ -121,7 +122,7 @@
 }
 .timeline .box .inner-box{
     background-color:whitesmoke;
-    padding:20px;
+    padding: 15px;
     border-radius: 12px;
 }
 .timeline .box.right{
@@ -169,4 +170,62 @@
 .timeline .box.right::before{
     left: 5px;
     border-color:transparent white transparent transparent;
+}
+/* SKILLS*/
+.skillset ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.skillset ul li .bar{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    
+
+}
+.skillset ul li span{
+    display: block;
+    position: relative;
+    height: inherit;
+    width: inherit;
+}
+
+.skillset ul li .p-70{
+    width: 70%;
+}
+.skillset ul li .p-50{
+    width: 50%;
+}
+.skillset ul li .p-25{
+    width: 25%;
+}
+.skillset ul li .p-60{
+    width: 60%;
+}
+.skillset ul li .p-65{
+    width: 65%;
+}
+
+.skillset ul li span::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgb(255, 179, 0);
+    animation: progressbar 1s linear;
+}
+
+@keyframes progressbar {
+    from{
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }
