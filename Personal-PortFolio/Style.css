@@ -57,6 +57,19 @@
     position: relative;
     box-shadow: -12px 10px 19px 1px rgb(0 0 0 / 44%);
 }
+
+@media(max-width:1400px){
+    .wrapper, #main-nav{
+        width: 1160px;
+    }
+}
+
+
+@media(max-width:1200px){
+    .wrapper, #main-nav{
+        width: 970px;
+    }
+}
 .wrapper > .row {
     position: absolute;
     width: 100%;
@@ -108,7 +121,7 @@
     color: #ffffffc7;
 }
 #about, #skills, #projects, #contact{
-    padding: 40px;
+    padding: 18px;
     position: absolute;
     top: 0px;
     z-index: 10;
@@ -142,8 +155,11 @@
     font-size: 2em;
 }
 #about h4{
-    font-size: 1.2em;
+    font-size: 0.1em;
     font-weight: bold;
+}
+@media(max-width:){
+
 }
 .timeline{
     position: relative;
