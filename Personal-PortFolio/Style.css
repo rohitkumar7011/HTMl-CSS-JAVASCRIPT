@@ -8,10 +8,17 @@
     height: 100%;
 }
 #container{
-    height: 100%;
+    height: 108vh;
     background-image: url(Images/img3.jpg);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     padding: 60px 0px;  
+}
+
+@media(max-width:768px){
+    #container{
+        padding: 0px;
+    }
 }
 
 #main-nav{
@@ -47,6 +54,16 @@
     background-color: #000;
     color: #fff;
 }
+
+@media(max-width:768px){
+    #main-nav{
+        position: fixed;
+        z-index: 10;
+    }
+    #main-nav ul li a span{
+        display: none;
+    }
+}
 .wrapper{
     background-color: rgb(39, 37, 37);
     margin: 0 auto;
@@ -56,6 +73,13 @@
     border-radius: 20px;
     position: relative;
     box-shadow: -12px 10px 19px 1px rgb(0 0 0 / 44%);
+}
+
+.wrapper > .row {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
 }
 
 @media(max-width:1400px){
@@ -70,12 +94,26 @@
         width: 970px;
     }
 }
-.wrapper > .row {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
+@media(max-width:992px){
+    .wrapper, #main-nav{
+        width: 760px;
+    }
 }
+
+@media(max-width:768px){
+    .wrapper, #main-nav{
+        width: 100%;  
+    }
+    .wrapper{
+        height: 100%;
+    }
+    .wrapper >.row{
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+}
+
 .intro{
     text-align: center;
     background-color:rgb(48, 42, 42);
@@ -96,6 +134,11 @@
     display: flex;
     justify-content: space-evenly;
 }
+@media(max-width:768px){
+    .intro{
+        display: none;
+    }
+}
 .content {
     position: relative;
     overflow-x: hidden;
@@ -103,6 +146,14 @@
 }
 .content > section{
     overflow-y: scroll;
+}
+
+@media(max-width:768px){
+    .content{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
 }
 #home{
     text-align: center;
@@ -115,11 +166,25 @@
     font-size: 3.5em;
     color: var(--text-color);
 }
+#home img{
+    display: none;
+}
 
 #home p{
     font-size: 1.5em;
     color: #ffffffc7;
 }
+
+@media (max-width:768px){
+    #home h1{
+        font-size: 2em;
+        color: var(--text-color);
+    }
+    #home img{
+        display: inline-block;
+    }
+}
+
 #about, #skills, #projects, #contact{
     padding: 18px;
     position: absolute;
@@ -155,11 +220,13 @@
     font-size: 2em;
 }
 #about h4{
-    font-size: 0.1em;
+    font-size: 1em;
     font-weight: bold;
 }
-@media(max-width:){
-
+@media(max-width:1200px){
+    #about ul li {
+        font-size: 0.7em; ;
+    }
 }
 .timeline{
     position: relative;
@@ -304,4 +371,10 @@
 #projects.show,
 #contact.show {
     transform: translateX(0%) rotateY(0deg);
+}
+
+@media(max-width:768px){
+    #about, #skills, #projects, #contact{
+        margin-top: 50px;
+    }
 }
